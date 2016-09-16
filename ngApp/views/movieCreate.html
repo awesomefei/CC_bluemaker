@@ -1,0 +1,36 @@
+<h1>Hello from movieCreate html</h1>
+<h1>Create a new movie</h1>
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+
+        <form ng-submit='vm.saveMovie()' name='movieForm' novalidate>
+            <div class="form-group">
+                <label for="title">Title</label>
+                <!--required=""必须让你在空格里添加东西-->
+                <input type="text" ng-model='vm.movie.tile' class ='form-control' ng-required="true">
+            </div>
+
+            <div class="form-group">
+                <label for="director">Director</label>
+                <input type="text" ng-model='vm.movie.director' class ='form-control' required="">
+            </div>
+
+            <div class="form-group">
+                <label for="imageUrl">Image Url</label>
+                <input type="text" ng-model='vm.movie.imageUrl' class ='form-control' required="">
+            </div>
+
+            <div class="form-group">
+                <input type="submit" class='btn btn-primary btn-block btn-sm' name="name" value="Save Movie"
+                ng-disabled='movieForm.$invalid'><!--client-side validation-->
+
+                <input type="button" ng-disabled='movieForm.$invalid' class='btn btn-danger btn-block btn-sm' name="name" value="Cancel">
+            </div>
+
+        </form>
+
+
+
+
+    </div>
+</div>

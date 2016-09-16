@@ -1,0 +1,22 @@
+.ng-invalid.ng-touched{
+    background-color: #FA787E;
+
+}
+.movieImg{
+    cursor:pointer;
+    cursor:hand;
+}
+.view.ng-enter{
+    -webkit-transition:1s linear all;
+    -o-transition:1s linear all;
+    transition: 1s linear all;
+
+    opacity:0;
+}
+.view.ng-enter-active{
+    opacity:1;
+}
+
+.view.ng-leave{
+    
+}
